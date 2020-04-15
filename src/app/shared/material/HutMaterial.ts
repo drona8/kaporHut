@@ -29,7 +29,7 @@ export const mm = [
 })
 export class HutMaterial {
   constructor(public matIconRegistry: MatIconRegistry) {
-    // matIconRegistry.registerFontClassAlias('fontawesome', 'fa');
+    matIconRegistry.registerFontClassAlias('fontawesome', 'fa');
   }
   static forRoot(): ModuleWithProviders {
     return {

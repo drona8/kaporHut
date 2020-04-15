@@ -1,1 +1,87 @@
-<p>footer works!</p>
+<footer>
+  <div>
+    <div>
+      <div>
+        <mat-card>
+          <mat-card-header>
+            <div mat-card-avatar *ngIf="footerData.col1.havingAvatar"></div>
+            <mat-card-title>{{footerData.col1.title}}</mat-card-title>
+            <mat-card-subtitle>{{footerData.col1.subTitle}}</mat-card-subtitle>
+          </mat-card-header>
+          <mat-card-content>
+            <p>{{footerData.col1.content}}</p>
+            <ul>
+              <li>
+                <div><mat-icon>phone</mat-icon>
+                  <p>N/A as of Now</p>
+                </div>
+              </li>
+              <li>
+                <div><mat-icon>query_builder</mat-icon>
+                    <p>Mon-Sat: 07:00AM - 05:00PM</p>
+                </div>
+              </li>
+              <li>
+                <div><mat-icon>near_me</mat-icon>
+                  <p>Kolkata, India</p>
+                </div>
+              </li>
+            </ul>
+          </mat-card-content>
+        </mat-card>
+      </div>
+      <div>
+        <mat-card>
+          <mat-card-header>
+            <div mat-card-avatar *ngIf="footerData.col2.havingAvatar"></div>
+            <mat-card-title>{{footerData.col2.title}}</mat-card-title>
+            <mat-card-subtitle>{{footerData.col2.subTitle}}</mat-card-subtitle>
+          </mat-card-header>
+          <mat-card-content>
+            <form>
+              <div>
+                <input id="subscribe-form-5-email" type="email" name="email" data-constraints="@Email @Required">
+                <label for="subscribe-form-5-email">Enter Your E-mail</label>
+              </div>
+              <button type="submit">Subscribe</button>
+            </form>
+          </mat-card-content>
+          <mat-card-actions>
+            <p>FOLLOW US : 
+            <mat-icon style="font-size: 2em; color: Tomato;" fontSet="fab" fontIcon="fa-facebook"></mat-icon>
+            
+            <mat-icon style="font-size: 2em; color: Tomato;" fontSet="fab" fontIcon="fa-twitter"></mat-icon>
+            <mat-icon style="font-size: 2em; color: Tomato;" fontSet="fab" fontIcon="fa-google-plus"></mat-icon>
+            <mat-icon style="font-size: 2em; color: Tomato;" fontSet="fab" fontIcon="fa-instagram"></mat-icon>
+          </p>
+          </mat-card-actions>
+        </mat-card>
+      </div>
+      <div>
+        <mat-card>
+          <mat-card-header>
+            <div mat-card-avatar *ngIf="footerData.col3.havingAvatar"></div>
+            <mat-card-title>{{footerData.col3.title}}</mat-card-title>
+            <mat-card-subtitle>{{footerData.col3.subTitle}}</mat-card-subtitle>
+          </mat-card-header>
+          <mat-card-content>
+            <input id="" type="email" name="email" data-constraints="@Email @Required"><br>
+            <label for="subscribe-form-5-email">Enter Your E-mail</label><br>
+            <button type="submit">Subscribe</button>
+          </mat-card-content>
+          <p class="text-white">{{footerData.col3.content}}</p>
+          <mat-card-actions>
+            <button mat-button>LIKE</button>
+            <button mat-button>SHARE</button>
+          </mat-card-actions>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <p><span>&copy;&nbsp;</span><span></span> <span>StartUp</span>. All rights reserved
+    </p>
+    <p>Design&nbsp;by&nbsp;<a href="https://www.smart-start-up.com/">StartUp</a></p>
+  </div>
+</footer>
